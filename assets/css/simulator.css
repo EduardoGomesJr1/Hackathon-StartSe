@@ -1,0 +1,48 @@
+#simulador div {
+    margin: 8px;
+}
+
+#simulador button :hover {
+    cursor: pointer;
+}
+
+#simulador button {
+    padding: 20px 40px;
+    font-size: 18px;
+    margin-bottom: 13px;
+    border-radius: 20px;
+    width: auto;
+}
+
+#simulador {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding-top: 30px;
+    text-align: center;
+    flex-direction: column;
+} 
+
+#simulador input {
+    width: 160px;
+    padding-left: 15px;
+    font-size: 18px;
+    height: 30px;
+    margin-bottom: 13px;
+    border-radius: 20px;
+    border: 2px solid hsl(0, 55%, 38%);
+}
+
+#simulador select {
+    width: 160px;
+    padding-left: 15px;
+    font-size: 18px;
+    height: 30px;
+    margin-bottom: 13px;
+    border-radius: 20px;
+    border: 2px solid hsl(0, 55%, 38%);
+}
+
+#simulador label {
+    font-size: 20px;
+}

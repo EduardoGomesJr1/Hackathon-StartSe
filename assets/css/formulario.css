@@ -1,0 +1,30 @@
+@import url("https://fonts.googleapis.com/css?family=Cinzel");
+
+#formulario form {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: Cinzel, serif;
+    font-size: 15px;
+    padding: 10px;
+}
+
+#formulario label {
+    display: block;
+    border-radius: 15%;
+    margin: 5px;
+}
+
+#formulario div {
+    display: block;
+    width: 200px;
+    margin: 5px 0;
+    text-align: left;
+}
+
+#formulario input {
+    display: inline-block;
+    padding: 1rem;
+    width: 250px;
+    text-align: left;
+    border: black solid 1px;
+}
