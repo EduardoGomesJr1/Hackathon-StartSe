@@ -1,27 +1,21 @@
 @import url("https://fonts.googleapis.com/css?family=Cinzel");
 
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
-html{
+html {
     font-size: 10px;
-    font-family: 'Cinzel', serif ;
+    font-family: "Cinzel", serif;
     scroll-behavior: smooth;
 }
 
-
-
-
 /* HEADER */
 
-
-
-nav a:hover{
-    background: #F6B042;
-  
+nav a:hover {
+    background: #f6b042;
 }
 
 header nav ul li a {
@@ -32,107 +26,101 @@ header nav ul li a {
     font-size: 15px;
     padding: 10px;
     transition: all 350ms linear 0s;
-    
 }
 
-header .container img{
+header .container img {
     height: 50px;
 }
 
-.container{
+.container {
     box-sizing: border-box;
     height: 70px;
     padding: 1rem;
     display: flex;
-    align-items: center ;
+    align-items: center;
     background-color: #533549;
     justify-content: space-between;
 }
 
-.menu{
+.menu {
     display: flex;
     list-style: none;
-    gap: .5rem;
+    gap: 0.5rem;
 }
 
-#btn-mobile{
+#btn-mobile {
     display: none;
-   
 }
 
-#btn-mainpage{
+#btn-mainpage {
     opacity: 0;
     position: fixed;
-    cursor:pointer;
+    cursor: pointer;
     margin-top: -17px;
     left: 34px;
     height: 40px;
-    width: 240px; 
-   
-} 
+    width: 240px;
+}
 
-@media (max-width: 1300px){
-
-
-        #btn-curso{
-            
-           margin-bottom: 15px; 
-        }
-        #segundoPasso{
-            font-size: 0.1rem;
-        }
+@media (max-width: 1300px) {
+    #btn-curso {
+        margin-bottom: 15px;
+    }
+    #segundoPasso {
+        font-size: 0.1rem;
+    }
     body {
-      
-    overflow-x: hidden;
+        overflow-x: hidden;
     } /*Para a responsividade do Mobile*/
 
-    #btn-mobile{
+    #btn-mobile {
         display: flex;
-        padding: .5rem 1rem;
+        padding: 0.5rem 1rem;
         font-size: 1rem;
         border: none;
         background: none;
         cursor: pointer;
-        gap: .5rem;
+        gap: 0.5rem;
     }
-    
-    #hamburguer{
-      display: block;
-      color: #F6B042;
-      border-top: 2px solid;
-      width: 20px;  
+
+    #hamburguer {
+        display: block;
+        color: #f6b042;
+        border-top: 2px solid;
+        width: 20px;
     }
-    
-    #hamburguer::after, #hamburguer::before{
-     content: '';
-     display: block;  
-     width: 20px;
-     height: 2px;
-     background: currentColor; 
-     margin-top: 5px;
-     transition: .3s;
-     position: relative;
+
+    #hamburguer::after,
+    #hamburguer::before {
+        content: "";
+        display: block;
+        width: 20px;
+        height: 2px;
+        background: currentColor;
+        margin-top: 5px;
+        transition: 0.3s;
+        position: relative;
     }
-    
-    #container-nav.active #hamburguer{
-       border-top: none;   
+
+    #container-nav.active #hamburguer {
+        border-top: none;
     }
-    
-    #container-nav.active #hamburguer::before{
-       transform: rotate(135deg);   
+
+    #container-nav.active #hamburguer::before {
+        transform: rotate(135deg);
     }
-    
-    #container-nav.active #hamburguer::after{
-      transform: rotate(-135deg);
-      top: -7px; /* Para alinhar o X. No entanto, precisa do position Relative em 
+
+    #container-nav.active #hamburguer::after {
+        transform: rotate(-135deg);
+        top: -7px; /* Para alinhar o X. No entanto, precisa do position Relative em 
                     #hamburguer::after, #hamburguer::before para funcionar */
     }
-    
-    #container-nav{
+
+    #container-nav {
         margin-bottom: 6px;
     }
-    
-    .menu{
+
+    .menu {
         display: none;
         position: absolute;
         margin-top: 22px;
@@ -144,127 +132,101 @@ header .container img{
         transform: translateX(100vw);
         transition: 0.5s ease transform;
     }
-    
-    .menu>li {
-        
+
+    .menu > li {
         display: flex;
         justify-content: center;
         padding: 0px;
         width: 100%;
-        color: #F6B042;
+        color: #f6b042;
         background-color: #533549;
         border-radius: 5px;
         border: 1px solid whitesmoke;
     }
-    
+
     .menu li a {
         flex: 1;
         text-align: center;
     }
-    
-    
-    #container-nav.active .menu{
+
+    #container-nav.active .menu {
         display: block;
         transform: translateX(-100vw);
         transition: 0.5s ease transform;
-        
     }
-    
-    
-    }
-
-
+}
 
 /*FOOTER*/
 
-
-footer{
-    
+footer {
     display: flex;
     width: 100%;
     justify-content: space-evenly;
     padding: 0px;
-    color: #F6B042;
-    background-color:#533549;
+    color: #f6b042;
+    background-color: #533549;
     bottom: 0;
     position: relative;
     margin-top: 20px;
 }
 
-
-
-#footer img{
+#footer img {
     height: 136px;
     margin-left: 20px;
 }
 
-#btn-footer{   
+#btn-footer {
     width: 190px;
-    background-color:#F6B042;
-    border-style:none;
+    background-color: #f6b042;
+    border-style: none;
     border-radius: 10px;
-    font-family: "cinzel",sans-serif; 
+    font-family: "cinzel", sans-serif;
     text-transform: uppercase;
     font-size: 15px;
     margin-top: 60px;
 }
 
-#div-footer a{
-    color:#533549;
+#div-footer a {
+    color: #533549;
     text-transform: uppercase;
     text-decoration: none;
 }
 
-#address-footer{
+#address-footer {
     font-family: "cinzel", serif;
     align-items: center;
     font-size: 15px;
     margin-top: 38px;
-
 }
 
-
-
-@media (max-width: 780px){ 
-
-    #btn-footer{
-    display: none;
-     
- }
-
+@media (max-width: 780px) {
+    #btn-footer {
+        display: none;
+    }
 }
 
-@media (max-width: 600px){ 
-
-    
-    #address-footer{
+@media (max-width: 600px) {
+    #address-footer {
         font-size: 12px;
-        margin-top: 40px;   
+        margin-top: 40px;
     }
- 
-
 }
 
-@media (max-width: 400px){ 
-
-    
-    #address-footer{
+@media (max-width: 400px) {
+    #address-footer {
         font-size: 9px;
-        margin-top: 30px;   
+        margin-top: 30px;
     }
 
-    #footer img{
+    #footer img {
         height: 100px;
         margin-left: 5px;
-        } 
-
+    }
 }
-
-
 
 /*MAIN*/
 
-a{
+a {
     text-decoration: none;
 }
 
@@ -281,7 +243,7 @@ a{
     letter-spacing: 0.05rem;
 }
 
-.curso_container{
+.curso_container {
     min-height: 80vh;
     width: 100%;
     display: flex;
@@ -299,38 +261,33 @@ a{
     text-align: center;
 }
 
-#span-title{
-    color:#533549;
+#span-title {
+    color: #533549;
 }
 
-#curso p{
+#curso p {
     font-size: 13px;
 }
-
 
 #curso .curso-header {
     margin-top: 50px;
     margin-bottom: 50px;
 }
 
-body{
-    background-color:whitesmoke;
+body {
+    background-color: whitesmoke;
 }
-
 
 /* Seção de Steps */
 
-
-
-
-#curso .curso{
+#curso .curso {
     flex-direction: column;
     max-width: 1200px;
     margin: 0 auto;
     padding: 100px 0;
     display: flex;
 }
-#curso .curso-header h1{
+#curso .curso-header h1 {
     margin-bottom: 50px;
 }
 #curso .all-steps {
@@ -339,8 +296,8 @@ body{
     justify-content: center;
     flex-direction: column;
 }
-#curso .steps-item{
-    display:flex;
+#curso .steps-item {
+    display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
@@ -362,13 +319,13 @@ body{
     color: white;
 }
 
-#curso .steps-info h1{
+#curso .steps-info h1 {
     font-size: 4rem;
     font-weight: 500;
-    color: #F6B042;
+    color: #f6b042;
 }
 
-#curso .steps-info h2{
+#curso .steps-info h2 {
     font-size: 1.8rem;
     font-weight: 500;
     margin-top: 10px;
@@ -382,47 +339,40 @@ body{
 }
 
 #curso .steps-img:after {
-    content: '';
+    content: "";
     position: absolute;
     left: 0;
-    top:0;
+    top: 0;
     height: 100%;
     width: 100%;
     background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
     opacity: 0.7;
 }
-#curso .steps-img img{
+#curso .steps-img img {
     transition: 0.5s ease transform;
 }
-#curso .steps-item:hover .steps-img img{
+#curso .steps-item:hover .steps-img img {
     transform: scale(1.1);
 }
 
-#btn-curso{   
+#btn-curso {
     width: 200px;
-    background-color:#F6B042;
-    border-style:none;
+    background-color: #f6b042;
+    border-style: none;
     border-radius: 10px;
-    font-family: "cinzel",sans-serif; 
+    font-family: "cinzel", sans-serif;
     text-transform: uppercase;
     font-size: 15px;
     margin-top: 60px;
 }
 
-#btn-curso a b{
+#btn-curso a b {
     color: black;
 }
 
-
-
 /* Media Query */
 
-
-
 @media only screen and (min-width: 768px) {
-
- 
-
     #curso .steps-item {
         flex-direction: row;
         height: 400px;
@@ -430,17 +380,16 @@ body{
         width: 90%;
         border-radius: 0;
     }
-    #curso .all-steps .steps-info{
-        height: 100%
+    #curso .all-steps .steps-info {
+        height: 100%;
     }
-    #curso .all-steps .steps-img{
-        height: 100%
+    #curso .all-steps .steps-img {
+        height: 100%;
     }
     #curso .steps-item:nth-child(even) {
         flex-direction: row-reverse;
     }
     .section-title {
-    
         font-size: 4rem;
         font-weight: 600;
         color: black;
@@ -449,12 +398,5 @@ body{
         text-transform: uppercase;
         letter-spacing: 0.2rem;
         text-align: center;
-       
     }
-
-
-   
-   
-
-
 }
