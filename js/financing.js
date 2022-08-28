@@ -1,4 +1,4 @@
-import { Installment } from './installment.js'
+import { Installment } from "./installment.js";
 
 export class Financing {
     #interestRate;
@@ -7,7 +7,9 @@ export class Financing {
     constructor(value, downPayment, interestRate, deadline) {
         this.#interestRate = interestRate;
         this.#deadline = deadline;
-        this.#installments.push(new Installment(0, 0, 0, 0, value - downPayment))
+        this.#installments.push(
+            new Installment(0, 0, 0, 0, value - downPayment)
+        );
     }
 
     static calcInterestAmount(value, interestRate) {
@@ -15,16 +17,30 @@ export class Financing {
     }
 
     calcMonthlyInstallments() {
-        let balance = this.#installments[this.#installments.length - 1].getBalance();
+        let balance =
+            this.#installments[this.#installments.length - 1].getBalance();
         let deadline = this.#deadline - (this.#installments.length - 1);
         let amortization = balance / deadline;
         for (let i = 0; i < deadline; i++) {
             const number = this.#installments.length;
-            const interestAmount = Financing.calcInterestAmount(balance, this.#interestRate);
+            const interestAmount = Financing.calcInterestAmount(
+                balance,
+                this.#interestRate
+            );
             const value = interestAmount + amortization;
             balance -= amortization;
-            if (balance < 0) { balance = 0; }
-            this.#installments.push(new Installment(number, value, interestAmount, amortization, balance))
+            if (balance < 0) {
+                balance = 0;
+            }
+            this.#installments.push(
+                new Installment(
+                    number,
+                    value,
+                    interestAmount,
+                    amortization,
+                    balance
+                )
+            );
         }
     }
 

@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Cinzel");
 
-*{
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -9,8 +9,8 @@
 
 /* HEADER */
 
-nav a:hover{
-    background: #F6B042;  
+nav a:hover {
+    background: #f6b042;
 }
 
 header nav ul li a {
@@ -20,84 +20,84 @@ header nav ul li a {
     font-family: "cinzel", serif;
     font-size: 15px;
     padding: 10px;
-    transition: all 350ms linear 0s;    
+    transition: all 350ms linear 0s;
 }
 
-header .container img{
+header .container img {
     height: 50px;
 }
 
-.container{
+.container {
     box-sizing: border-box;
     height: 70px;
     padding: 1rem;
     display: flex;
-    align-items: center ;
+    align-items: center;
     background-color: #533549;
     justify-content: space-between;
 }
 
-.menu{
+.menu {
     display: flex;
     list-style: none;
-    gap: .5rem;
+    gap: 0.5rem;
 }
 
-#btn-mobile{
-    display: none;   
+#btn-mobile {
+    display: none;
 }
 
-#btn-mainpage{
+#btn-mainpage {
     opacity: 0;
     position: fixed;
-    cursor:pointer;
+    cursor: pointer;
     margin-top: -17px;
     left: 34px;
     height: 40px;
-    width: 240px;    
-} 
+    width: 240px;
+}
 
 /*MAIN*/
 
-#bodyHomepage{
+#bodyHomepage {
     color: #f6b042;
-    background-color: #533549;    
+    background-color: #533549;
 }
 
-#homepage{
+#homepage {
     color: #f6b042;
     background-color: #533549;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     display: flex;
-    flex-direction: column;    
+    flex-direction: column;
 }
 
 #banner {
     height: calc(100vh - 70px);
     width: 100%;
-    border: solid 1px #f6b042; 
+    border: solid 1px #f6b042;
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: top;       
+    background-position: top;
 }
 
 #slogan h1 {
     height: 200px;
-    width: 100%;            
+    width: 100%;
     display: inherit;
     padding: 20px;
-    text-align: center;        
+    text-align: center;
     font-family: "cinzel", sans-serif;
     border: solid 1px #f6b042;
     background-color: rgba(0, 0, 0, 0.4);
-    font-size: 30px;       
+    font-size: 30px;
 }
 
 #slogan div {
     display: flex;
-    text-align: center;    
+    text-align: center;
 }
 
 h1 strong {
@@ -105,32 +105,32 @@ h1 strong {
     text-align: center;
 }
 
-.frases-efeito h3, legend {
+.frases-efeito h3,
+legend {
     font-size: 20px;
     padding: 20px;
-    line-height: 1.8 ;
+    line-height: 1.8;
     font-family: "cinzel", sans-serif;
-    text-align: center;   
+    text-align: center;
 }
-
-
 
 #container {
     display: flex;
-    flex-direction: column;   
+    flex-direction: column;
 }
 
 .item {
     display: flex;
 }
 
-
-#item1 div, #item3 div, #item5 div {
+#item1 div,
+#item3 div,
+#item5 div {
     height: 400px;
-    width: 50%;    
+    width: 50%;
     justify-content: center;
-    align-items: center;   
-    background-color: #533549;    
+    align-items: center;
+    background-color: #533549;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -139,18 +139,19 @@ h1 strong {
 
 #item4 div {
     height: 400px;
-    width: 100%;    
+    width: 100%;
     justify-content: center;
     align-items: center;
-    background-color: #533549;   
+    background-color: #533549;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     border: solid 1px #f6b042;
-    background-color: rgba(0, 0, 0, 0.4);    
+    background-color: rgba(0, 0, 0, 0.4);
 }
 
-#item3, #item5 {
+#item3,
+#item5 {
     flex-direction: row-reverse;
 }
 
@@ -159,86 +160,80 @@ h1 strong {
 }
 
 #foto1 {
-    background-image: url("../assets/img/artesas-brasileiras1.jpg");   
+    background-image: url("../assets/img/artesas-brasileiras1.jpg");
 }
 #foto3 {
     background-image: url("../assets/img/trabalho-equipe.jpg");
 }
 #foto5 {
-    background-image: url("../assets/img/vendedora.jpg");     
+    background-image: url("../assets/img/vendedora.jpg");
 }
 
 .frases-efeito {
     display: inherit;
     font-family: "cinzel", sans-serif;
-    font-size: 26px; 
-    flex-direction: column; 
+    font-size: 26px;
+    flex-direction: column;
 }
-
 
 /* FUNCIONALIDADES */
 
-
 .button {
-    display:inline-block;
-    background-color:#000;
-    color: #f6b042; 
+    display: inline-block;
+    background-color: #000;
+    color: #f6b042;
     text-transform: uppercase;
-    font-size:12px;
-    font-weight:600;
+    font-size: 12px;
+    font-weight: 600;
     text-decoration: none;
-    padding:10px 30px;
-    margin-top:30px;
-    border-radius:20px; 
-    font-family: "cinzel", sans-serif;         
+    padding: 10px 30px;
+    margin-top: 30px;
+    border-radius: 20px;
+    font-family: "cinzel", sans-serif;
 }
 
-.frases-efeito a:hover{
-    background: #F6B042;
-    color: #fff;  
+.frases-efeito a:hover {
+    background: #f6b042;
+    color: #fff;
 }
-
 
 /*FOOTER*/
 
-
-footer{    
+footer {
     display: flex;
     width: 100%;
     justify-content: space-evenly;
     padding: 0px;
-    color: #F6B042;
-    background-color:#533549;
+    color: #f6b042;
+    background-color: #533549;
     bottom: 0;
     position: relative;
     margin-top: 20px;
 }
 
-
-
-#footer img{
+#footer img {
     height: 136px;
     margin-left: 20px;
 }
 
-#btn-footer{   
+#btn-footer {
     width: 190px;
-    background-color:#F6B042;
-    border-style:none;
+    background-color: #f6b042;
+    border-style: none;
     border-radius: 10px;
-    font-family: "cinzel",sans-serif; 
+    font-family: "cinzel", sans-serif;
     text-transform: uppercase;
     font-size: 15px;
     margin-top: 60px;
 }
 
-#div-footer a{
-    color:#533549;
+#div-footer a {
+    color: #533549;
     text-transform: uppercase;
     text-decoration: none;
 }
 
-#address-footer{
+#address-footer {
     font-family: "cinzel", serif;
     align-items: center;
     font-size: 15px;

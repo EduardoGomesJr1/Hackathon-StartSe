@@ -1,18 +1,18 @@
 @import url("https://fonts.googleapis.com/css?family=Cinzel");
 
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
-html{
+html {
     font-size: 10px;
-    font-family: 'Cinzel', serif ;
+    font-family: "Cinzel", serif;
     scroll-behavior: smooth;
 }
 
-a{
+a {
     text-decoration: none;
 }
 img_curso {
@@ -28,7 +28,7 @@ img_curso {
     letter-spacing: 0.05rem;
 }
 
-.portfolio_container{
+.portfolio_container {
     min-height: 80vh;
     width: 100%;
     display: flex;
@@ -37,7 +37,6 @@ img_curso {
     justify-content: center;
 }
 .section-title {
-    
     font-size: 4rem;
     font-weight: 900;
     color: black;
@@ -48,21 +47,16 @@ img_curso {
     text-align: center;
 }
 
-
-
-
-
-
 /* Seção de Portifólio */
 
-#portfolio .portfolio{
+#portfolio .portfolio {
     flex-direction: column;
     max-width: 1200px;
     margin: 0 auto;
     padding: 100px 0;
     display: flex;
 }
-#portfolio .portfolio-header h1{
+#portfolio .portfolio-header h1 {
     margin-bottom: 50px;
 }
 #portfolio .all-projects {
@@ -71,8 +65,8 @@ img_curso {
     justify-content: center;
     flex-direction: column;
 }
-#portfolio .project-item{
-    display:flex;
+#portfolio .project-item {
+    display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
@@ -94,13 +88,13 @@ img_curso {
     color: white;
 }
 
-#portfolio .project-info h1{
+#portfolio .project-info h1 {
     font-size: 4rem;
     font-weight: 500;
-    color: #F6B042;
+    color: #f6b042;
 }
 
-#portfolio .project-info h2{
+#portfolio .project-info h2 {
     font-size: 1.8rem;
     font-weight: 500;
     margin-top: 10px;
@@ -114,27 +108,23 @@ img_curso {
 }
 
 #portfolio .project-img:after {
-    content: '';
+    content: "";
     position: absolute;
     left: 0;
-    top:0;
+    top: 0;
     height: 100%;
     width: 100%;
     background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
     opacity: 0.7;
 }
-#portfolio .project-img img{
+#portfolio .project-img img {
     transition: 0.5s ease transform;
 }
-#portfolio .project-item:hover .project-img img{
+#portfolio .project-item:hover .project-img img {
     transform: scale(1.1);
 }
 
 /* Keyframes */
-
-
-
-
 
 /* Media Query */
 @media only screen and (min-width: 768px) {
@@ -145,17 +135,16 @@ img_curso {
         width: 90%;
         border-radius: 0;
     }
-    #portfolio .all-projects .project-info{
-        height: 100%
+    #portfolio .all-projects .project-info {
+        height: 100%;
     }
-    #portfolio .all-projects .project-img{
-        height: 100%
+    #portfolio .all-projects .project-img {
+        height: 100%;
     }
     #portfolio .project-item:nth-child(even) {
         flex-direction: row-reverse;
     }
     .section-title {
-    
         font-size: 4rem;
         font-weight: 600;
         color: black;
@@ -164,9 +153,5 @@ img_curso {
         text-transform: uppercase;
         letter-spacing: 0.2rem;
         text-align: center;
-       
     }
-   
-
-
 }

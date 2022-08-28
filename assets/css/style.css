@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Cinzel");
 
-*{
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -9,10 +9,8 @@
 
 /* HEADER */
 
-
-
-a:hover{
-    background: #F6B042;
+a:hover {
+    background: #f6b042;
 }
 
 header nav ul li a {
@@ -26,64 +24,61 @@ header nav ul li a {
     flex-wrap: wrap;
 }
 
-header .container img{
+header .container img {
     height: 50px;
 }
 
-.container{
+.container {
     box-sizing: border-box;
     height: 70px;
     padding: 1rem;
     display: flex;
-    align-items: center ;
+    align-items: center;
     background-color: #533549;
     justify-content: space-between;
 }
 
-.menu{
-    display: flex;    
+.menu {
+    display: flex;
     list-style: none;
-    gap: .5rem;
+    gap: 0.5rem;
 }
 
-#btn-mobile{
+#btn-mobile {
     display: none;
-   
 }
 
-footer{
-    display: flex; 
-    justify-content:space-between ;
+footer {
+    display: flex;
+    justify-content: space-between;
     padding: 0px;
     width: 100%;
-    color: #F6B042;
+    color: #f6b042;
     background-color: #533549;
     border-radius: 5px;
     border: 1px solid whitesmoke;
     flex-wrap: wrap;
 }
 
-button{
+button {
     justify-content: center;
     padding: 70px;
     width: 100%;
-    color: #F6B042;
-    background-color: #533549;  
+    color: #f6b042;
+    background-color: #533549;
     border-style: none;
     font-family: Cinzel, serif;
     color: white;
     text-transform: uppercase;
 }
 
-a{
+a {
     color: white;
     text-transform: uppercase;
     transition: all 250ms linear 0s;
-    
-
 }
 
-address{
+address {
     justify-content: center;
     padding: 50px;
 }
